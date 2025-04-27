@@ -107,12 +107,16 @@ Follow these steps to set up the **AI-Text-Humanizer** on your local machine.
 3. **First-time setup with Docker:**
    ```Powershell
    docker build -t ai-text-humanizer .
-   docker run -p 8000:8000 ai-text-humanizer
+   docker run ai-text-humanizer
    ```
 
 4. **For subsequent runs (when Docker container is running):**
    ```bash
    bash run.sh
+   ```
+5. **Start Frontend Development Server (Next.js)**
+   ```Powershell
+   npm run dev
    ```
 
 ## 💻 Usage
