@@ -94,18 +94,23 @@ Follow these steps to set up the **AI-Text-Humanizer** on your local machine.
 ### Steps
 
 1. **Clone the repository:**
-   ```bash
+   ```Powershell
    git clone https://github.com/Khizer-Data/AI-Text-Humanizer.git
    cd AI-Text-Humanizer
    ```
 
-2. **First-time setup with Docker:**
-   ```bash
-   docker build -t AI-Text-Humanizer .
-   docker run -p 8000:8000 AI-Text-Humanizer
+2. **Install Node Modules**
+   ```Powershell
+   npm install --legacy-peer-deps
+   ```
+   
+3. **First-time setup with Docker:**
+   ```Powershell
+   docker build -t ai-text-humanizer .
+   docker run -p 8000:8000 ai-text-humanizer
    ```
 
-3. **For subsequent runs (when Docker container is running):**
+4. **For subsequent runs (when Docker container is running):**
    ```bash
    bash run.sh
    ```
